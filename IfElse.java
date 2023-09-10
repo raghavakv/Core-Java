@@ -1,4 +1,4 @@
-package com.DescionMakingStatments;
+package com.Hackerrank;
 
 import java.util.Scanner;
 
@@ -6,24 +6,57 @@ public class IfElse {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("What is your score");
-		int score=scanner.nextInt();
-
-		if (score >= 0 && score <= 35) {
-			System.out.println("FAIL");
-		} else if (score <= 50) {
-			System.out.println("Your Grade is 'C'");
-		} else if (score <= 65) {
-			System.out.println("Your Grade is 'B+'");
-		} else if (score <= 75) {
-			System.out.println("Your Grade is 'B'");
-		} else if (score <= 85) {
-			System.out.println("Your Grade is 'A'");
-		} else if (score <= 100) {
-			System.out.println("Your Grade is 'A+'");
+		System.out.println("Enter the Number:");
+		int a = scanner.nextInt();
+		if (a % 2 == 0) {
+			if (a >= 2 && a <= 5 && a % 2 == 0) {
+				System.out.println("Not Weird");
+			}
+			if (a >= 6 && a <= 20 ) {
+				System.out.println("Weird");
+			}
+			if (a > 20 && a % 2 == 0) {
+				System.out.println("Not Weird");
+			}
 		} else {
-			System.out.println("Invalid");
-			scanner.close();
+			System.out.println("Weird");
 		}
+		scanner.close();
 	}
 }
+//******************************************************************************
+//import java.io.*;
+//import java.math.*;
+//import java.security.*;
+//import java.text.*;
+//import java.util.*;
+//import java.util.concurrent.*;
+//import java.util.regex.*;
+//
+//public class Solution {
+//
+//    private static final Scanner scanner = new Scanner(System.in);
+//
+//    public static void main(String[] args) {
+//        int N = scanner.nextInt();
+//        scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+//        
+//        if (N % 2 == 0) {
+//            if (N >= 2 && N <= 5) {
+//            System.out.println("Not Weird");
+//            }
+//            
+//            if (N >= 6 && N <= 20) {
+//                System.out.println("Weird");
+//            }
+//            
+//            if (N > 20) {
+//                System.out.println("Not Weird");
+//            }
+//        } else { 
+//            System.out.println("Weird");
+//        }
+//        
+//        scanner.close();
+//    }
+//}
