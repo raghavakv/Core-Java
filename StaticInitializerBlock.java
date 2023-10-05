@@ -33,5 +33,6 @@ public class StaticInitializerBlock {
 		} else {
 			System.out.println("java.lang.Exception: Breadth and height must be positive");
 		}
+		scanner.close();
 	}
 }

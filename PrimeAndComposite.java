@@ -1,6 +1,6 @@
 package com.arrays.one;
 
-import java.util.Scanner;
+
 
 public class PrimeAndComposite {
 
