@@ -18,6 +18,6 @@ public class StringIntroduction {
 //		System.out.println(A + " " + B);
 		System.out.println(Character.toUpperCase(A.charAt(0)) + A.substring(1) + " "
 				+ Character.toUpperCase(B.charAt(0)) + B.substring(1));
+		sc.close();
 	}
-
 }
